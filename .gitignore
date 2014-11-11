@@ -1,4 +1,4 @@
 apikey.ph
-cache/
+cache
 cache/*.jpg
 *.png
