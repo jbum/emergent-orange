@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw
+import traceback
 
 # Amalgam Image Test (for Emergent Orange paper) -- Jim Bumgardner 8/21/2014
 #
@@ -73,8 +74,8 @@ for p in xrange(args.passes):
                     print "Loading",iname
                 try:
                     img = Image.open(iname).convert("RGB").resize((tw,th),Image.ANTIALIAS)
-                except:
-                    print "Problem loading image",iname
+                except Exception as ex:
+                    print "Problem loading image",iname,":",ex
                     continue
                 break
 
