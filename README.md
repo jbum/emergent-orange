@@ -16,6 +16,8 @@ Use this to modify the variable $maxID in getRandomPhotos.pl.
 4) Run the perl script getRandomPhotos.pl  - it will downlaod 10,000 random Flickr photo thumbnails to the cache.
    Note: This relies on the command-line version of curl being present.
 
+   This will take 2-3 hours, and the images will occupy 1.4 gigabytes of disc space.
+
 5) Run the python script amalgamTest.py to produce test images using these random photos.  The default settings
 produce a 10x10 grid of amalgam images.  Use the -p argument to increase the number of images to layer - as you 
 increase the -p value, the orange effect will become more apparent.
