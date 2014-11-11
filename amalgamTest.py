@@ -35,6 +35,10 @@ imageNames = glob.glob(args.dir + '/*.jpg')
 
 print "%d image names loaded" % (len(imageNames))
 
+if len(imageNames) == 0:
+    print "No images found"
+    sys.exit(0)
+
 imgData = [ {'csums':[[0]*numTPixels for chan in range(3)]} for i in xrange(numTiles) ]
 
 if args.seed > 0:
@@ -70,6 +74,7 @@ for p in xrange(args.passes):
                 try:
                     img = Image.open(iname).convert("RGB").resize((tw,th),Image.ANTIALIAS)
                 except:
+                    print "Problem loading image",iname
                     continue
                 break
 
