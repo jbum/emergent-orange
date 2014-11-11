@@ -1,5 +1,4 @@
 Sample code for reproducing the Emergent Orange effect using uncorrelated photos from Flickr.
-Jim Bumgardner 2014
 
 To use
 
