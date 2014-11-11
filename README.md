@@ -1,4 +1,5 @@
 Sample code for reproducing the Emergent Orange effect using uncorrelated photos from Flickr.
+Jim Bumgardner 2014
 
 To use
 
@@ -35,4 +36,4 @@ increase the -p value, the orange effect will become more apparent.
         -v, --verbose                    Verbose output
 
 Here is sample output, showing 100 images for each tile, with the output normalized.
-
+![Sample Output](http://i.imgur.com/73kHxu7.jpg "Sample Output")
